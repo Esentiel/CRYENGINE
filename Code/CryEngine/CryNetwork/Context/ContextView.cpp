@@ -1444,7 +1444,7 @@ bool CContextView::ScheduleAttachment(bool fromChannel, IRMIMessageBodyPtr pMess
 			evt.pRMIBody = pMessage;
 			ContextState()->BroadcastChannelEvent(Parent(), &evt);
 
-			ChangedObject(evt.id, 0, 0);
+			ChangedObject(evt.id, 0, NET_ASPECT_ALL);
 		}
 	}
 
